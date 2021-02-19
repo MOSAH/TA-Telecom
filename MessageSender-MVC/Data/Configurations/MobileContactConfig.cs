@@ -15,6 +15,9 @@
             builder.HasKey(mc => mc.Id);
 
             builder.Property(mc => mc.MoblieNumber).HasMaxLength(30);
+
+            builder.HasData(MobileContact.SeedMobileNumbers());
         }
+
     }
 }
